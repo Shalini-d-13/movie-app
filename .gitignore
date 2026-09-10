@@ -3,41 +3,100 @@
 *.log
 *.pyc
 *.swp
+*.swo
 .DS_Store
 .atom/
 .buildlog/
-.history
+.history/
 .svn/
 migrate_working_dir/
 
-# IntelliJ related
+# Environment Variables / Secrets
+.env
+.env.*
+!.env.example
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# IntelliJ / Android Studio
 *.iml
 *.ipr
 *.iws
 .idea/
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
+# VS Code
+# Uncomment if you do not want VS Code settings in Git
 #.vscode/
 
-# Flutter/Dart/Pub related
-**/doc/api/
-**/ios/Flutter/.last_build_id
+# Flutter / Dart / Pub
 .dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
 .pub-cache/
 .pub/
-/build/
+build/
+**/doc/api/
 
-# Symbolication related
-app.*.symbols
+# Flutter iOS
+**/ios/Flutter/.last_build_id
+**/ios/Flutter/ephemeral/
 
-# Obfuscation related
-app.*.map.json
+# Flutter generated files
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
 
-# Android Studio will place build artifacts here
+# Android
+/android/.gradle/
 /android/app/debug
 /android/app/profile
 /android/app/release
+/android/local.properties
+/android/key.properties
+
+# Android Studio generated files
+android/.idea/
+android/captures/
+android/.cxx/
+
+# iOS
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/ephemeral/
+ios/Flutter/Generated.xcconfig
+ios/Flutter/flutter_export_environment.sh
+
+# Xcode
+*.xcuserstate
+*.xcscmblueprint
+xcuserdata/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# Symbolication
+app.*.symbols
+
+# Obfuscation
+app.*.map.json
+
+# Coverage
+coverage/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.cache
